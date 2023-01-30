@@ -1,0 +1,153 @@
+@font-face { font-family: roboto-regular; /*https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file*/
+	src: url('../Roboto-Regular.ttf'); } /*I downloaded the roboto font file from google then added it as a file into the folder and used this
+	code to import it*/
+
+body {
+	box-sizing: border-box;
+	font-family: roboto-regular, arial;
+	background: rgb(236, 236, 236);
+	color:rgb(34,40,49);
+}
+
+.product{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.product p{
+	padding-left:1rem;
+	
+}
+
+.product img{
+	border-width: 10 rem;
+	width:35rem;
+	height:30rem;
+	object-fit: cover;
+	
+	
+}
+.payment{
+	display:flex;
+	flex-direction: row;
+}
+
+.contactus p{
+	padding-left:1rem;
+	
+}
+
+.locations p{
+	padding-left:1rem;
+}
+
+
+
+.checkout p{
+	padding-left:1rem;
+	
+}
+
+.button{
+	padding-top:1rem ;
+}
+
+.citations p{
+	padding-left:1rem;
+}
+
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+
+
+p, ol, ul {
+    
+}
+
+
+figure {
+	margin: 0;
+	
+	
+}
+
+
+.imagelink{
+	border: solid 2px transparent;
+}
+
+.imagelink:hover{
+	border-color: rgb(71,225,12);
+}
+
+
+a:active, a:hover, a:focus {
+	text-decoration: none; 
+	
+	color: rgb(71,225,12);
+}
+
+
+
+.nav-main {
+	display: inline-block;
+	color: rgb(71,225,12);
+	background-color: black;
+	font-size: 1.5vw;
+	border-width: rem;
+	border-style: solid;
+	border-color: rgb(34,40,49);	
+
+	
+
+	padding: 0.75rem 0.5rem;
+
+	/*
+		Because our anchor tags have an underline by default, we end up having to remove them for our buttons (by default).
+	*/
+	text-decoration: none;
+
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	/*
+		Unlike our prior transition statement, here we are also adding a type of easing using the transition-timing-function property.
+	*/
+	transition-timing-function: ease-out;
+}
+
+
+.nav-main:active, .nav-main:hover, .nav-main:focus {
+	color: black;
+	background-color: rgb(71,225,12);
+	
+}
+
+
+/*
+	By setting our labels and textareas to display as a 'block' element, they will bump down the next content (form fields or buttons) to the next line because they span 100% of the width by default.
+*/
+label, textarea {
+	display: block;
+}
+
+
+/*
+	We can use margins to create space between the different form fields.
+*/
+input {
+	margin-bottom: 1rem;
+}

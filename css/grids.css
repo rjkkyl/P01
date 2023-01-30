@@ -1,0 +1,9 @@
+/* Grids.css */
+*{
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+}
+
